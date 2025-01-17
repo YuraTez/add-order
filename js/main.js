@@ -86,5 +86,6 @@ $("#productName").on("input" , function (){
 $(".categories-list__el").on("click" , function (){
     let text = $(this).text();
     formCategorySelectedItem.innerText = text;
+    $(".category-selection").hide(600)
     categorySelectionReady.classList.add("active")
 })
